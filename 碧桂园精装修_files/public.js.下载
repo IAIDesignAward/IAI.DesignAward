@@ -1,0 +1,208 @@
+﻿/*placeholder*/
+//$(document).ready(function () {
+//    $(function () {
+//        $('input, textarea').placeholder();
+//    });
+//});
+
+/*ie判断*/
+function iePrompt() {
+
+    function createMent() {
+        var promptMent = "<div class='prompt'><span>您的浏览器版本也太低啦 ！<br />赶快下载最新版的吧！推荐浏览器 : <a href='https://www.google.cn/chrome/' target='_blank'>Google浏览器</a></span> <b class='prompt_close'></b></div>";
+        $("body").append(promptMent);
+        $(".prompt").slideDown("slow");
+        $(".prompt_close,.prompt").click(function () {
+            $(".prompt").slideUp('300');
+        })
+
+    }
+
+    if (navigator.appName == "Microsoft Internet Explorer") {
+
+        var browser = navigator.appName
+        var b_version = navigator.appVersion
+        var version = b_version.split(";");
+        var trim_Version = version[1].replace(/[ ]/g, "");
+        var ua = window.navigator.userAgent;
+
+        if (ua.indexOf("Edge") >= -1 || ua.indexOf("edge") >= -1) {
+            $("body").attr("style", "font-family:'Microsoft YaHei', 'arial';")
+        }
+        if (trim_Version.indexOf("MSIE") >= -1) {
+            $("body").attr("style", "font-family:'Microsoft YaHei', 'arial';")
+        }
+        if (browser == "Microsoft Internet Explorer" && trim_Version == "MSIE6.0") {
+            createMent();
+        }
+        if (browser == "Microsoft Internet Explorer" && trim_Version == "MSIE7.0") {
+            createMent();
+        }
+        else if (browser == "Microsoft Internet Explorer" && trim_Version == "MSIE8.0") {
+            createMent();
+        }
+
+    }
+}
+
+iePrompt();
+
+$(function () {
+    $("#tijiao").click(function () {
+
+        if ($.trim($("#Email").val()) == '' || $.trim($("#Email").val()) == '请输入您的邮箱地址') {
+            layer.msg('请输入您的邮箱地址')
+            return false;
+        }
+
+        if ($.trim($("#Email").val()) != '' && $.trim($("#Email").val()) != '请输入您的邮箱地址') {
+            var regEmail = /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/;
+            if (!regEmail.test($.trim($("#Email").val()))) {
+                layer.msg('邮箱格式错误')
+                return false;
+            }
+        }
+
+
+        $.ajax({
+            type: "POST",
+            url: "/message/message",
+            async: false,
+            data: {
+                Email: $.trim($("#Email").val()),
+                Content: "底部邮箱留言",
+                Code: $.trim($("#Code").val()),
+                MsgList: "邮箱：" + $.trim($("#Email").val()) + "内容：底部邮箱留言"//发送到邮箱内容，可根据实际情况增加或者删减
+            },
+            success: function (data) {
+                if (data.indexOf("成功") != -1) {
+                    window.location.href = "/success.shtml";
+                } else {
+                    layer.msg(data)
+                    return false;
+                }
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                alert("服务器错误，请重新提交")
+            }
+        });
+        return false;
+    })
+
+    $("#Email").keydown(function (event) {
+        if (event.keyCode == 13) {
+            $("#tijiao").click();
+        }
+    })
+});
+
+
+//图片暂无
+$(function () {
+    $("img").each(function () {
+        if ($(this).attr("src").length == 0 || $(this).attr("src").toLowerCase().indexOf("nopic") != -1) {
+            $(this).attr("src", "/UpLoadFile/zanwu.png").removeAttr("height").removeAttr("width").removeAttr("style");
+            return true;
+        }
+    })
+});
+
+
+$(document).ready(function () {
+    $(function () {
+        $("#searchbtn").click(function () {
+            if ($.trim($("#keywords").val()) == "" || $.trim($("#keywords").val()) == "搜索") {
+                layer.msg('请输入您要搜索的关键字')
+                return false;
+            }
+            else {
+                window.location.href = "/search.shtml?keyword=" + escape($.trim($("#keywords").val()));
+            }
+        })
+
+        $("#keywords").keydown(function (event) {
+            if (event.keyCode == 13) {
+                $("#searchbtn").click();
+            }
+        })
+    })
+})
+
+
+$(document).ready(function () {
+    $(function () {
+        $("#searchbtn2").click(function () {
+            if ($.trim($("#keywords2").val()) == "" || $.trim($("#keywords2").val()) == "搜索...") {
+                layer.msg('请输入您要搜索的关键字')
+                return false;
+            }
+            else {
+                window.location.href = "/search.shtml?keyword=" + escape($.trim($("#keywords2").val()));
+            }
+        })
+
+        $("#keywords2").keydown(function (event) {
+            if (event.keyCode == 13) {
+                $("#searchbtn2").click();
+            }
+        })
+    })
+})
+
+ if ($(window).width() >1259) {
+	$(function() {
+		$(window).scroll(function() {
+			height = $(window).scrollTop();
+			if(height > 1) {
+				$('.header').addClass("fixed").show();
+			}
+			if(height < 1) {
+				$('.header').removeClass("fixed").show();
+			}
+		});
+		
+	});
+	
+}
+
+
+$(".nav>ul>li").hover(function(){
+	$(this).addClass('active').siblings().removeClass("active");
+	
+})
+
+
+/*menu*/
+$(function() {
+	var width = $("#mMenu").width();
+	$(".navPhoneBtn").click(function() {
+		$(".transparent").fadeIn(800);
+		$("#mMenu").animate({
+			right: 0
+		}, 600);
+	})
+	$(".closeBtn").click(function() {
+		$(".transparent").fadeOut(800);
+		$("#mMenu").animate({
+			right: -width
+		}, 600)
+	})
+	
+})
+
+
+$("#mMenu .second .titleSecond:has(span)").click(function(){
+	$("#mMenu .div-01").addClass("hide")
+	$("#mMenu .groupsThird .third").eq($("#mMenu .second .titleSecond:has(span)").index($(this))).addClass("active");
+})
+
+$("#mMenu .breadNav .arrowBtn").click(function(){
+	$("#mMenu .div-01").removeClass("hide")
+	$("#mMenu .third").removeClass("active");
+})
+
+
+$("#mMenu .search").click(function(){
+  $(".schbox").toggle();
+});
+
