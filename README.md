@@ -241,7 +241,7 @@
                 
                     <li>
                         <a href="http://www.iai-apdf.com/zpzs1/downloaddetail_370.shtml">
-                            <div class="pic piclist"><img src="./碧桂园精装修_files/2a66d66f-a4e2-49b3-85d0-249f7ab82736.jpg" class="vcenter"></div>
+                            <div class="pic piclist"><img src="./https://github.com/IAIDesignAward/IAI.DesignAward/blob/main/2a66d66f-a4e2-49b3-85d0-249f7ab82736.jpg/2a66d66f-a4e2-49b3-85d0-249f7ab82736.jpg" class="vcenter"></div>
                             <div class="bt">木影山云</div>
                             <div class="wb">
                                 代拓 / 中国
