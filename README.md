@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <!-- saved from url=(0054)http://www.iai-apdf.com/zpzs1/downloaddetail_206.shtml -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
@@ -54,7 +55,7 @@
 
                             <div class="titleSecond">
                                 
-                                        
+                                        <a href="http://www.iai-apdf.com/zpzs1/downloaddetail_206.shtml######" title="关于IAI    ">关于IAI    </a><span class="icon"></span>
                                     
                             </div>
                             <div class="titleSecond">
@@ -200,7 +201,7 @@
                 <a href="http://www.iai-apdf.com/zpzs1/downloaddetail_206.shtml">
                     <svg t="1635401073108" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4212" width="24" height="24">
                         <path d="M921.6 882.688H142.336c-24.576 0-44.032 19.456-44.032 44.032s19.456 44.032 44.032 44.032H921.6c24.576 0 44.032-19.456 44.032-44.032 0-23.552-19.456-44.032-44.032-44.032zM502.784 806.912c8.192 8.192 19.456 12.288 29.696 11.264 10.24 0 21.504-3.072 29.696-11.264l266.24-266.24c15.36-15.36 15.36-40.96 0-56.32s-40.96-15.36-56.32 0L570.368 686.08V89.088c0-21.504-17.408-39.936-39.936-39.936s-39.936 17.408-39.936 39.936v592.896L292.864 484.352c-15.36-15.36-40.96-15.36-56.32 0s-15.36 40.96 0 56.32l266.24 266.24z" p-id="4213"></path>
-                    </svg>下载
+                    </svg>
                 </a>
 
             </div>
