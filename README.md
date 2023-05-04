@@ -54,7 +54,7 @@
 
                             <div class="titleSecond">
                                 
-                                        <a href="http://www.iai-apdf.com/zpzs" title="关于IAI    ">关于IAI    </a><span class="icon"></span>
+                                        
                                     
                             </div>
                             <div class="titleSecond">
@@ -243,7 +243,7 @@
                             <div class="pic piclist"><img src="./碧桂园精装修_files/2a66d66f-a4e2-49b3-85d0-249f7ab82736.jpg" class="vcenter"></div>
                             <div class="bt">木影山云</div>
                             <div class="wb">
-                                戴拓 / 中国
+                                代拓 / 中国
                             </div>
                         </a>
                     </li>
