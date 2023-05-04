@@ -54,7 +54,7 @@
 
                             <div class="titleSecond">
                                 
-                                        <a href="http://www.iai-apdf.com/zpzs1/downloaddetail_206.shtml######" title="关于IAI    ">关于IAI    </a><span class="icon"></span>
+                                        <a href="http://http://www.iai-apdf.com/zpzs1/" title="关于IAI    ">关于IAI    </a><span class="icon"></span>
                                     
                             </div>
                             <div class="titleSecond">
