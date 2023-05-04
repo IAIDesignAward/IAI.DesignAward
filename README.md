@@ -54,7 +54,7 @@
 
                             <div class="titleSecond">
                                 
-                                        <a href="http://http://www.iai-apdf.com/zpzs1/" title="关于IAI    ">关于IAI    </a><span class="icon"></span>
+                                        <a href="http://www.iai-apdf.com/zpzs" title="关于IAI    ">关于IAI    </a><span class="icon"></span>
                                     
                             </div>
                             <div class="titleSecond">
@@ -183,7 +183,7 @@
     <div class="inside-topjianju inside-product-show  inside-zp-show clearfix">
         <div class="container">
             <div class="index-title inside-title">碧桂园精装修</div>
-            <font id="dianjis" style="display:none;">446</font>
+            <font id="dianjis" style="display:none;">440</font>
             <div class="tu">
                 
                     <img src="./碧桂园精装修_files/0718cf27-f8d7-4cfe-a392-8556e46f25d7.jpg">
@@ -243,7 +243,7 @@
                             <div class="pic piclist"><img src="./碧桂园精装修_files/2a66d66f-a4e2-49b3-85d0-249f7ab82736.jpg" class="vcenter"></div>
                             <div class="bt">木影山云</div>
                             <div class="wb">
-                                代拓 / 中国
+                                戴拓 / 中国
                             </div>
                         </a>
                     </li>
